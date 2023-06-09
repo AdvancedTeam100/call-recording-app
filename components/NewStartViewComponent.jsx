@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { Text, View, Image, TouchableOpacity } from 'react-native';
 import { CheckBox } from 'react-native-elements';
 import NewStartViewStyle from './style/NewStartViewStyle';
-import WorkSpaceComponent from './workSpaceComponent';
+import WorkSpaceComponent from './WorkSpaceComponent';
 import { createStackNavigator } from '@react-navigation/stack';
 import SpaceUp from './elements/SpaceUpElement';
 import SpaceDown from './elements/SpaceDownElement';

@@ -1,5 +1,5 @@
 import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, View, Text } from 'react-native';
+import { Text } from 'react-native';
 import React, { useEffect, useState } from 'react';
 import { loadFonts } from './expo-fonts';
 import NewStartViewComponent from './components/NewStartViewComponent';

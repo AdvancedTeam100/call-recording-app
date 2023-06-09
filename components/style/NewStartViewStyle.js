@@ -13,27 +13,38 @@ const styles = StyleSheet.create({
     },
     spaceUp: {
         width: "100%",
-        height: "7%",
-        alignItems: 'center',
-        justifyContent: 'center',
+        height: "12%",
         backgroundColor: '#ededed',
-        opacity: 0.1,
-        borderBottomWidth: 1,
-        borderBottomColor: '#000',
+        borderBottomWidth: 3,
+        borderBottomColor: '#cccfcc',
+        elevation: 5, // only for Android
+        shadowColor: '#cccfcc', // only for iOS
+        shadowOffset: {
+        width: 0,
+        height: 2,
+        },
+        shadowOpacity: 0.25,
+        shadowRadius: 1.84,
+        
     },
     spaceDown: {
         width: "100%",
         height: "7%",
-        alignItems: 'center',
-        justifyContent: 'center',
         backgroundColor: '#ededed',
-        opacity: 0.1,
-        borderTopWidth: 1,
-        borderTopColor: '#000',
+        borderTopWidth: 3,
+        borderTopColor: '#cccfcc',
+        elevation: 5, // only for Android
+        shadowColor: '#cccfcc', // only for iOS
+        shadowOffset: {
+        width: 0,
+        height: 2,
+        },
+        shadowOpacity: 0.25,
+        shadowRadius: 1.84,
     },
     box: {
         width: "100%",
-        height: "86%",
+        height: "81%",
     },
     // layout control style end
 
@@ -41,7 +52,7 @@ const styles = StyleSheet.create({
     inner: {
         flex: 1,
         paddingTop: '10%',
-        backgroundColor: "#f1f3f0",
+        backgroundColor: "#f1f3f0",    
     },
     textStyle: {
         fontSize: 24,
@@ -72,16 +83,12 @@ const styles = StyleSheet.create({
         flexDirection: 'row'
     },
     imageView:{
-        marginTop: '10%',
+        marginTop: '5%',
         marginLeft: '25%',
         alignItems: 'center',
         width: "50%", 
         height: '50%',
         aspectRatio: 1
-    },
-    imgStyle1: {
-        width: "40%",
-        height: "40%"
     },
     imgStyle2: {
         width:"46%",
