@@ -28,9 +28,15 @@ const styles = StyleSheet.create({
         width: '100%',
         height: '100%', 
         resizeMode:'contain'
-    }
+    },
     // main box layout end
-
+    // audio player image start
+    inner_box_5: {
+        width: '20%',
+        height: 55,
+        alignItems: 'center'
+    },
+    // audio player image end
 });
 
 export default styles;

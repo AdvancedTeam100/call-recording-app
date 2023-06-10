@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
-import { Text, View, Image, TouchableOpacity } from 'react-native';
+import AsyncStorage from '@react-native-async-storage/async-storage';
+import {Text, View, Image, TouchableOpacity } from 'react-native';
 import { CheckBox } from 'react-native-elements';
 import NewStartViewStyle from './style/NewStartViewStyle';
 import WorkSpaceComponent from './WorkSpaceComponent';
@@ -8,7 +9,6 @@ import SpaceUp from './elements/SpaceUpElement';
 import SpaceDown from './elements/SpaceDownElement';
 
 const Stack = createStackNavigator();
-
 
 const NewStartViewComponent = () => {
     return (
@@ -33,6 +33,7 @@ export const HomeScreen = ({ navigation }) => {
     const handleCheck = () => {
         setChecked(!checked);
         console.log('checked');
+        AsyncStorage.setItem('showAgain', 'false');
     };
 
     const handleImage2Click = () => {

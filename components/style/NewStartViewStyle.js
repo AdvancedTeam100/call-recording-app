@@ -13,7 +13,7 @@ const styles = StyleSheet.create({
     },
     spaceUp: {
         width: "100%",
-        height: "12%",
+        height: "7%",
         backgroundColor: '#ededed',
         borderBottomWidth: 3,
         borderBottomColor: '#cccfcc',
@@ -44,7 +44,7 @@ const styles = StyleSheet.create({
     },
     box: {
         width: "100%",
-        height: "81%",
+        height: "86%",
     },
     // layout control style end
 

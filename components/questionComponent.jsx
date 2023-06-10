@@ -1,4 +1,5 @@
-import { TouchableOpacity, Text, View, Image } from 'react-native';
+import React, { useState } from 'react';
+import { TouchableOpacity, Text, View, Image, BackHandler } from 'react-native';
 import SpaceDown from './elements/SpaceDownElement';
 import NewStartViewStyle from './style/NewStartViewStyle';
 import QuestionStyle from './style/QuestionStyle';
@@ -15,14 +16,20 @@ const QuestionComponent = () => {
     );
 }
 
+// header part start
 const SpaceUpWithItem = () => {
+    const handlePress = () => {
+        BackHandler.exitApp(); // close the app when the button is pressed
+      };
     return <View style={NewStartViewStyle.spaceUp} >
-      <TouchableOpacity onPress={() => alert('Reset button pressed')} style={WorkSpaceStyle.headerImg2}>
+      <TouchableOpacity onPress={handlePress} style={WorkSpaceStyle.headerImg2}>
         <Image source={require('../assets/reset.png')} style={WorkSpaceStyle.headerImgStyle} />
       </TouchableOpacity>
     </View>
   }
+// header part end 
 
+// main box part start
 const Box = () => {
     return (
         <View style={NewStartViewStyle.box}>
@@ -65,5 +72,6 @@ const Box = () => {
         </View>
     );
 }
+// main box part end
 
 export default QuestionComponent;
